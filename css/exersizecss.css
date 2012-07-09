@@ -6,7 +6,7 @@
 	margin:0;
 	}
 div{
-	outline:0px dashed #000000;
+	outline:1px dashed #000000;
 	}
 div.clear{
 	width:0px;
@@ -19,8 +19,6 @@ div.container{
 	}
 body{
 	/*background-image:url(../pic/orig.png);*/
-	width:1349px;
-	height:1256px;
 	padding-top:10px;
 	background-color:#f5f4f2;
 	}
@@ -64,7 +62,9 @@ div.main-menu a{
 	color:#b2b1af;
 	margin-right:35px;
 	}
-
+div.main-menu li:hover a{
+	color:#333333;
+	}
 p.special{
 	font-size:15px;
 	text-transform:capitalize;
@@ -94,10 +94,37 @@ p.medium-topic{
 div.slowly-pic{
 	min-height:310px;
 	width:auto;
-	padding:10px 10px 10px 10px;
-	background-color:#edeceb;
+	position:relative;
+	}
+div.logo{
+	position:relative;
+	min-height:310px;
+	width:auto;
+	border:10px solid #edeceb;
 	background-repeat:no-repeat;
 	background-position:center;
+	}
+div.awwards{
+	position:absolute;
+	bottom:70px;
+	right:10px;
+	
+	}
+div.awwards p{
+	background-color:#333;
+	width:200px;
+	height:35px;
+	text-align:center;
+	padding-top:15px;
+	
+	}
+div.awwards p a{
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+span.color{
+	color:#dedc00;
+	background-color:#333;
 	}
 /* ------------------start content -------------- */
 div.content{
@@ -110,27 +137,30 @@ div.content-left{
 	height:290px;
 	width:302px;
 	float:left;
-	
+	padding-right:10px;
 	}
 div.up-left {
 	height:145px;
 	width:302px;       
-		
+	background-repeat:no-repeat;
+	background-position:bottom;
 	}
-h4{
+a.topic{
+	text-decoration:none;
+	color:#000000;
 	background-color:#dedc00;
-	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
-	font-size:16px;
+	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;	font-size:16px;
 	text-transform:capitalize;
-	width:140px;
-	height:30px;
-	text-align:center;
-	z-index:1;
-	} 
-
-
-.img:hover{
-	opacity:0.8;
+	padding:3px;
+	}
+a.img img{
+	position:relative;
+	bottom:10px;
+	z-index:-1;
+	}
+a.img img:hover{
+	opacity:0.7;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
 	}
 div.left-text{ 
 	min-height:145px;
@@ -145,13 +175,13 @@ div.left-text{
 div.content-middle{
 	min-height:290px;
 	width:auto;
-	margin:0 315px 0 315px; 
+	margin:0 312px 0 312px; 
 	}
 div.up-middle {
 	min-height:145px;
 	width:auto;
 	background-repeat:no-repeat;
-	background-position:center;
+	background-position:bottom;
 	}
 /*div.up-middle a:hover img{
 	border:1px solid #FFF;
@@ -170,12 +200,13 @@ div.content-right{
 	min-height:290px;
 	width:302px;
 	float:right;
+	padding-left:10px;
 	}
 div.up-right {
 	min-height:145px;
 	width:302px;
 	background-repeat:no-repeat;
-	background-position:center;
+	background-position:bottom;
 	}
 div.right-text{
 	min-height:145px;
@@ -201,8 +232,9 @@ h5{
 /* ------------------ sart detail left ------------- */
 div.detail-left{
 	min-height:220px;
-	width:210px;
+	width:190px;
 	float:left;
+	padding-right:20px;
 	}
 div.detail-left ul{
 	list-style-type:none;
@@ -222,6 +254,7 @@ div.detail-left a{
 div.detail-left li:hover a{
 	color:#333333;	
 	opacity:0.7;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
 	}
 /*div.detail-left ul img{
 	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
@@ -231,9 +264,9 @@ div.detail-left li:hover a{
 /* ------------------ sart detail left-middle ------------- */
 div.detail-left-middle{
 	min-height:220px;
-	width:280px;
+	width:258px;
 	float:left;
-	
+	padding-right:20px;
 	}
 div.detail-left-middle ul{
 	list-style-type:none;
@@ -252,19 +285,22 @@ div.detail-left-middle a{
 div.detail-left-middle li:hover a{
 	color:#333333;	
 	opacity:0.8;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
 	}
 h5.linkk a{
 	color:#666666;
 	}
 h5.linkk a:hover{
 	opacity:0.7;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
 	}
 /* ------------------ sTart detail right-middle ------------- */
 div.detail-right-middle{
 
 	min-height:220px;
-	width:220px;
+	width:210px;
 	float:left;
+	padding-right:10px;
 	}
 div.detail-right-middle ul{
 	list-style-type:none;
@@ -292,6 +328,7 @@ p.tell{
 	}
 p.sign a:hover{
 	opacity:0.7;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
 	}
 p.sign{
 	margin-bottom:5px;
@@ -357,6 +394,7 @@ input.input{
 	}
 input.input:hover{
 	opacity:0.6;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
 	}
 input.ok{
 	padding:6px;
@@ -367,7 +405,7 @@ input.ok{
 	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
 	}
 input.ok:hover{
-	
+	filter:alpha(opacity=40); /* For IE8 and earlier */
 	opacity:0.8;
 	}
 p.news2{
@@ -385,6 +423,7 @@ div.copyright{
 	min-height:125px;
 	width:400px;
 	float:left;
+	padding-left:10px;
 	}
 p.copyright{
 	color:#999999;
@@ -399,7 +438,7 @@ p.copyright a{
 p.copyright a:hover{
 	text-decoration:underline;
 	opacity:0.7;
-	
+	filter:alpha(opacity=40); /* For IE8 and earlier */
 	}
 /* ------------------ sart footer link-sites  ------------- */
 div.link-sites{
@@ -433,6 +472,7 @@ a.rss{
 	}
 a.rss:hover, .fb:hover, .tw:hover, .fr:hover{
 	opacity:0.7;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
 	}
 p.rej-nous{
 	display:inline;
@@ -463,7 +503,7 @@ a.hover{
 	text-decoration:none;
 	}
 a.hover:hover{
-	
+	filter:alpha(opacity=40); /* For IE8 and earlier */
 	opacity:0.7;
 	}
 span{
