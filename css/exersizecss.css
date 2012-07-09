@@ -18,7 +18,6 @@ div.container{
 	width:950px;
 	}
 body{
-	/*background-image:url(../pic/orig.png);*/
 	padding-top:10px;
 	background-color:#f5f4f2;
 	}
@@ -149,7 +148,7 @@ div.left-text{
 	line-height:22px;
 	text-align:justify;
 	color:#a09f9e;	
-		}
+	}
 h4{
 	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
 	background-color:#dedc00;
@@ -184,9 +183,6 @@ div.up-middle {
 	background-repeat:no-repeat;
 	background-position:bottom;
 	}
-/*div.up-middle a:hover img{
-	border:1px solid #FFF;
-	}*/	
 div.middle-text{
 	min-height:145px;
 	width:auto;
@@ -229,7 +225,6 @@ h5{
 	text-transform:uppercase;
 	color:#666666;
 	}
-
 /* ------------------ sart detail left ------------- */
 div.detail-left{
 	min-height:220px;
@@ -243,7 +238,6 @@ div.detail-left ul{
 	}
 div.detail-left li{
 	padding-top:3px;
-	
 	}
 div.detail-left a{
 	color:#999999;
@@ -257,11 +251,6 @@ div.detail-left li:hover a{
 	opacity:0.7;
 	filter:alpha(opacity=40); /* For IE8 and earlier */
 	}
-/*div.detail-left ul img{
-	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
-	text-transform:uppercase;
-	color:#666666;
-	}*/
 /* ------------------ sart detail left-middle ------------- */
 div.detail-left-middle{
 	min-height:220px;
@@ -281,7 +270,6 @@ div.detail-left-middle a{
 	text-decoration:none;
 	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
 	font-size:12px;
-	
 	}
 div.detail-left-middle li:hover a{
 	color:#333333;	
@@ -366,19 +354,12 @@ p.map a:hover{
 	opacity:0.8;
 	text-decoration:underline;
 	}
-/*span.aa{
-	margin-left:7px;
-	font-size:15px;
-	text-transform:uppercase;
-	}*/
 /* ------------------ sart detail right  ------------- */
 div.detail-right{
 	min-height:220px;
 	width:auto;
 	margin-left:710px;
-	
 	}
-
 p.news{
 	margin-top:25px;
 	color:#999999;
